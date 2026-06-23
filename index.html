@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Фонд развития промышленности Омской области</title>
+    <meta property="og:title" content="Фонд развития промышленности Омской области">
+    <meta property="og:description" content="Содействие развитию промышленного потенциала, поддержка кластерных инициатив и импортозамещающих проектов">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://achepurnov.github.io/fond-omsk/">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='4' fill='%23C5CA31'/><text x='16' y='23' text-anchor='middle' font-size='20' font-weight='bold' fill='%23fff'>Ф</text></svg>">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: #231F20; line-height: 1.6; background: #fff; overflow-x: hidden; font-size: 18px; }
@@ -24,9 +29,9 @@
         .hero { padding: 140px 0 80px; background: linear-gradient(135deg, #F8F9FC 0%, #F0F4E8 50%, #F8F9FC 100%); color: #231F20; text-align: center; position: relative; overflow: hidden; }
         .hero::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 4px; background: linear-gradient(90deg, #11ACCD, #7FC06D, #C5CA31); }
         .hero::after { content: ''; position: absolute; inset: 0; background: radial-gradient(circle at 70% 30%, rgba(197,202,49,0.06) 0%, transparent 50%); pointer-events: none; }
-        .hero .hero-bg { position: absolute; inset: 0; opacity: .08; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 800'%3E%3Cpath d='M60 550 L60 400 L120 360 L120 180 L180 140 L180 360 L240 390 L240 550 Z' fill='%2311ACCD'/%3E%3Crect x='280' y='350' width='60' height='200' rx='6' fill='%237FC06D'/%3E%3Crect x='360' y='280' width='40' height='270' rx='6' fill='%23C5CA31'/%3E%3Crect x='430' y='320' width='70' height='230' rx='8' fill='%2311ACCD'/%3E%3Cpath d='M580 550 L580 180 L630 180 L630 360 L680 360 L680 440 L730 440 L730 550 Z' fill='%237FC06D'/%3E%3Ccircle cx='830' cy='360' r='60' fill='%23C5CA31'/%3E%3Crect x='920' y='400' width='50' height='150' rx='6' fill='%2311ACCD'/%3E%3Crect x='1000' y='320' width='30' height='230' rx='4' fill='%237FC06D'/%3E%3Crect x='1060' y='240' width='60' height='310' rx='6' fill='%23C5CA31'/%3E%3Cpath d='M0 600 L1200 600' stroke='%2311ACCD' stroke-width='4' fill='none' opacity='.4'/%3E%3Crect x='140' y='560' width='160' height='14' rx='4' fill='%237FC06D' opacity='.5'/%3E%3Crect x='600' y='560' width='200' height='14' rx='4' fill='%23C5CA31' opacity='.5'/%3E%3Crect x='900' y='560' width='100' height='14' rx='4' fill='%2311ACCD' opacity='.5'/%3E%3C/svg%3E"); background-size: cover; background-position: center; pointer-events: none; }
+        .hero .hero-bg { position: absolute; inset: 0; opacity: .12; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 800'%3E%3Cpath d='M60 550 L60 400 L120 360 L120 180 L180 140 L180 360 L240 390 L240 550 Z' fill='%2311ACCD'/%3E%3Crect x='280' y='350' width='60' height='200' rx='6' fill='%237FC06D'/%3E%3Crect x='360' y='280' width='40' height='270' rx='6' fill='%23C5CA31'/%3E%3Crect x='430' y='320' width='70' height='230' rx='8' fill='%2311ACCD'/%3E%3Cpath d='M580 550 L580 180 L630 180 L630 360 L680 360 L680 440 L730 440 L730 550 Z' fill='%237FC06D'/%3E%3Ccircle cx='830' cy='360' r='60' fill='%23C5CA31'/%3E%3Crect x='920' y='400' width='50' height='150' rx='6' fill='%2311ACCD'/%3E%3Crect x='1000' y='320' width='30' height='230' rx='4' fill='%237FC06D'/%3E%3Crect x='1060' y='240' width='60' height='310' rx='6' fill='%23C5CA31'/%3E%3Cpath d='M0 600 L1200 600' stroke='%2311ACCD' stroke-width='4' fill='none' opacity='.4'/%3E%3Crect x='140' y='560' width='160' height='14' rx='4' fill='%237FC06D' opacity='.5'/%3E%3Crect x='600' y='560' width='200' height='14' rx='4' fill='%23C5CA31' opacity='.5'/%3E%3Crect x='900' y='560' width='100' height='14' rx='4' fill='%2311ACCD' opacity='.5'/%3E%3C/svg%3E"); background-size: cover; background-position: center; pointer-events: none; }
         .hero h1 { font-size: 58px; font-weight: 800; margin-bottom: 20px; position: relative; z-index: 1; background: linear-gradient(135deg, #11ACCD 0%, #7FC06D 50%, #C5CA31 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
-        .hero .subtitle { font-size: 22px; color: #555; max-width: 720px; margin: 0 auto 40px; position: relative; z-index: 1; }
+        .hero .subtitle { font-size: 22px; color: #333; font-weight: 500; max-width: 720px; margin: 0 auto 40px; position: relative; z-index: 1; }
         .hero-btns { display: flex; gap: 16px; justify-content: center; position: relative; z-index: 1; flex-wrap: wrap; }
         .hero-btn { display: inline-block; min-width: 220px; padding: 16px 40px; background: #C5CA31; color: #fff; text-decoration: none; border-radius: 6px; font-weight: 700; font-size: 16px; transition: transform .2s, box-shadow .2s; text-align: center; }
         .hero-btn:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(197,202,49,0.3); }
@@ -54,7 +59,8 @@
         .cluster-stat-item .label { font-size: 15px; color: #888; margin-top: 6px; }
 
         .benefits-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-bottom: 44px; }
-        .benefit-card { padding: 32px; background: #fff; border-radius: 12px; border: 1px solid #E8E8E8; text-align: center; }
+        .benefit-card { padding: 32px; background: #fff; border-radius: 12px; border: 1px solid #E8E8E8; text-align: center; transition: transform .2s, box-shadow .2s; }
+        .benefit-card:hover { transform: translateY(-3px); box-shadow: 0 8px 24px rgba(0,0,0,0.08); }
         .benefit-card h4 { color: #11ACCD; margin-bottom: 10px; font-size: 18px; }
         .benefit-card p { font-size: 16px; color: #666; }
 
@@ -75,7 +81,10 @@
 
         .loan-advantages { max-width: 720px; margin: 0 auto 36px; text-align: center; color: #555; font-size: 18px; }
         .loan-programs { display: flex; flex-wrap: wrap; justify-content: center; gap: 24px; margin-bottom: 36px; }
-        .loan-card { flex: 0 1 320px; padding: 28px 24px; background: #fff; border-radius: 12px; border: 1px solid #E8E8E8; text-align: center; }
+        .loan-card { flex: 0 1 320px; padding: 28px 24px; background: #fff; border-radius: 12px; border: 1px solid #E8E8E8; text-align: center; transition: transform .2s, box-shadow .2s; position: relative; }
+        .loan-card:hover { transform: translateY(-3px); box-shadow: 0 8px 24px rgba(0,0,0,0.08); }
+        .loan-card.featured { border-color: #C5CA31; box-shadow: 0 0 0 2px #C5CA31; }
+        .loan-card .badge { position: absolute; top: -12px; left: 50%; transform: translateX(-50%); background: linear-gradient(135deg, #11ACCD, #7FC06D); color: #fff; padding: 4px 16px; border-radius: 20px; font-size: 12px; font-weight: 700; white-space: nowrap; }
         .loan-card h4 { color: #11ACCD; margin-bottom: 12px; font-size: 18px; text-align: center; }
         .loan-card .loan-rate { font-size: 32px; font-weight: 800; color: #C5CA31; margin-bottom: 8px; text-align: center; }
         .loan-card .loan-detail { font-size: 17px; font-weight: 700; color: #231F20; margin-bottom: 14px; text-align: center; }
@@ -174,8 +183,8 @@
         <h1>Фонд развития<br>промышленности Омской области</h1>
         <p class="subtitle">Содействие развитию промышленного потенциала, поддержка кластерных инициатив и импортозамещающих проектов</p>
         <div class="hero-btns">
-            <a href="#join-cluster" class="hero-btn">Вступить в кластер</a>
-            <a href="#join-loan" class="hero-btn">Получить льготный займ</a>
+            <a href="#join-form" class="hero-btn">Вступить в кластер</a>
+            <a href="#join-form" class="hero-btn">Получить льготный займ</a>
         </div>
     </div>
 </section>
@@ -308,7 +317,7 @@
         </div>
 
         <div class="btn-wrap">
-            <a href="#join-cluster" class="hero-btn">Вступить в кластер</a>
+            <a href="#join-form" class="hero-btn">Вступить в кластер</a>
         </div>
     </div>
 </section>
@@ -345,13 +354,15 @@
                 <div class="loan-detail">от 5 до 50 млн ₽ · до 5 лет</div>
                 <div class="loan-desc">Уровень поддержки: региональный<br>Собственное софинансирование: 20%</div>
             </div>
-            <div class="loan-card">
+            <div class="loan-card featured">
+                <div class="badge">★ Лучшая ставка</div>
                 <h4>Поддержка участников промышленного кластера</h4>
                 <div class="loan-rate">1%</div>
                 <div class="loan-detail">от 5 до 20 млн ₽ · до 3 лет</div>
                 <div class="loan-desc">Уровень поддержки: региональный<br>Собственное софинансирование: 20%</div>
             </div>
-            <div class="loan-card">
+            <div class="loan-card featured">
+                <div class="badge">★ Лучшая ставка</div>
                 <h4>Ответственный инвестор</h4>
                 <div class="loan-rate">1%</div>
                 <div class="loan-detail">от 5 до 30 млн ₽ · до 5 лет</div>
@@ -365,7 +376,7 @@
         </div>
 
         <div class="btn-wrap">
-            <a href="#join-loan" class="hero-btn">Получить льготный займ</a>
+            <a href="#join-form" class="hero-btn">Получить льготный займ</a>
         </div>
     </div>
 </section>
@@ -377,53 +388,40 @@
             <div class="fund-doc-item">
                 <div class="doc-icon">📄</div>
                 <a href="ustav.pdf" download target="_blank">Устав Фонда</a>
-                <a href="ustav.pdf" download target="_blank" class="hero-btn" style="margin-top:12px;padding:8px 24px;font-size:13px;color:#fff;">Скачать</a>
+                <a href="ustav.pdf" download target="_blank" class="hero-btn" style="margin-top:12px;padding:10px 28px;font-size:14px;color:#fff;">Скачать</a>
             </div>
             <div class="fund-doc-item">
                 <div class="doc-icon">📋</div>
                 <a href="rasporyazhenie.pdf" download target="_blank">Распоряжение о деятельности Фонда</a>
-                <a href="rasporyazhenie.pdf" download target="_blank" class="hero-btn" style="margin-top:12px;padding:8px 24px;font-size:13px;color:#fff;">Скачать</a>
+                <a href="rasporyazhenie.pdf" download target="_blank" class="hero-btn" style="margin-top:12px;padding:10px 28px;font-size:14px;color:#fff;">Скачать</a>
             </div>
             <div class="fund-doc-item">
                 <div class="doc-icon">📜</div>
                 <a href="svidetelstvo.pdf" download target="_blank">Свидетельство о регистрации Фонда</a>
-                <a href="svidetelstvo.pdf" download target="_blank" class="hero-btn" style="margin-top:12px;padding:8px 24px;font-size:13px;color:#fff;">Скачать</a>
+                <a href="svidetelstvo.pdf" download target="_blank" class="hero-btn" style="margin-top:12px;padding:10px 28px;font-size:14px;color:#fff;">Скачать</a>
             </div>
         </div>
     </div>
 </section>
 
-<section class="form-section" id="join-cluster">
+<section class="form-section" id="join-form">
     <div class="container">
-        <h2 class="section-title">Вступить <span>в кластер</span></h2>
+        <h2 class="section-title">Оставить <span>заявку</span></h2>
         <div class="form-wrap">
             <form action="https://formsubmit.co/frpoo@omskportal.ru" method="POST">
-                <input type="hidden" name="_subject" value="Заявка на вступление в кластер">
+                <input type="hidden" name="_subject" id="form-subject" value="Заявка в Фонд">
                 <input type="hidden" name="_captcha" value="false">
-                <input type="text" name="company" placeholder="Наименование предприятия" required>
-                <input type="text" name="name" placeholder="ФИО контактного лица" required>
-                <input type="tel" name="phone" placeholder="Номер телефона" required>
-                <input type="email" name="email" placeholder="Электронная почта" required>
-                <textarea name="comment" placeholder="Комментарий"></textarea>
-                <button type="submit">Отправить заявку</button>
-            </form>
-        </div>
-    </div>
-</section>
-
-<section class="form-section" id="join-loan">
-    <div class="container">
-        <h2 class="section-title">Получить <span>льготный займ</span></h2>
-        <div class="form-wrap">
-            <form action="https://formsubmit.co/frpoo@omskportal.ru" method="POST">
-                <input type="hidden" name="_subject" value="Заявка на льготный займ">
-                <input type="hidden" name="_captcha" value="false">
+                <select name="purpose" id="form-purpose" required>
+                    <option value="">Цель обращения</option>
+                    <option value="cluster">Вступление в промышленный кластер</option>
+                    <option value="loan">Получение льготного займа</option>
+                </select>
                 <input type="text" name="company" placeholder="Наименование предприятия" required>
                 <input type="text" name="name" placeholder="ФИО контактного лица" required>
                 <input type="tel" name="phone" placeholder="Номер телефона" required>
                 <input type="email" name="email" placeholder="Электронная почта" required>
                 <select name="program">
-                    <option value="">Интересующая программа</option>
+                    <option value="">Интересующая программа (если займ)</option>
                     <option>Стандарт</option>
                     <option>Проекты развития</option>
                     <option>Импортозамещение</option>
@@ -465,7 +463,7 @@
 <footer class="footer">
     <div class="container">
         <p>© 2026 Фонд развития промышленности Омской области</p>
-        <p style="margin-top:4px;"><a href="mailto:frpoo@omskportal.ru">frpoo@omskportal.ru</a> · <a href="#">Политика конфиденциальности</a></p>
+        <p style="margin-top:4px;"><a href="mailto:frpoo@omskportal.ru">frpoo@omskportal.ru</a></p>
     </div>
 </footer>
 
@@ -482,6 +480,15 @@
             if (target) target.scrollIntoView({ behavior: 'smooth' });
         });
     });
+
+    const purpose = document.getElementById('form-purpose');
+    const subject = document.getElementById('form-subject');
+    if (purpose && subject) {
+        purpose.addEventListener('change', () => {
+            const map = { cluster: 'Заявка на вступление в кластер', loan: 'Заявка на льготный займ' };
+            subject.value = map[purpose.value] || 'Заявка в Фонд';
+        });
+    }
 </script>
 
 </body>
