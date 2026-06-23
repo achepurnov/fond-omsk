@@ -24,6 +24,7 @@
         .hero { padding: 140px 0 80px; background: linear-gradient(135deg, #F8F9FC 0%, #F0F4E8 50%, #F8F9FC 100%); color: #231F20; text-align: center; position: relative; overflow: hidden; }
         .hero::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 4px; background: linear-gradient(90deg, #11ACCD, #7FC06D, #C5CA31); }
         .hero::after { content: ''; position: absolute; inset: 0; background: radial-gradient(circle at 70% 30%, rgba(197,202,49,0.06) 0%, transparent 50%); pointer-events: none; }
+        .hero .hero-bg { position: absolute; inset: 0; opacity: .08; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 800'%3E%3Cpath d='M60 550 L60 400 L120 360 L120 180 L180 140 L180 360 L240 390 L240 550 Z' fill='%2311ACCD'/%3E%3Crect x='280' y='350' width='60' height='200' rx='6' fill='%237FC06D'/%3E%3Crect x='360' y='280' width='40' height='270' rx='6' fill='%23C5CA31'/%3E%3Crect x='430' y='320' width='70' height='230' rx='8' fill='%2311ACCD'/%3E%3Cpath d='M580 550 L580 180 L630 180 L630 360 L680 360 L680 440 L730 440 L730 550 Z' fill='%237FC06D'/%3E%3Ccircle cx='830' cy='360' r='60' fill='%23C5CA31'/%3E%3Crect x='920' y='400' width='50' height='150' rx='6' fill='%2311ACCD'/%3E%3Crect x='1000' y='320' width='30' height='230' rx='4' fill='%237FC06D'/%3E%3Crect x='1060' y='240' width='60' height='310' rx='6' fill='%23C5CA31'/%3E%3Cpath d='M0 600 L1200 600' stroke='%2311ACCD' stroke-width='4' fill='none' opacity='.4'/%3E%3Crect x='140' y='560' width='160' height='14' rx='4' fill='%237FC06D' opacity='.5'/%3E%3Crect x='600' y='560' width='200' height='14' rx='4' fill='%23C5CA31' opacity='.5'/%3E%3Crect x='900' y='560' width='100' height='14' rx='4' fill='%2311ACCD' opacity='.5'/%3E%3C/svg%3E"); background-size: cover; background-position: center; pointer-events: none; }
         .hero h1 { font-size: 58px; font-weight: 800; margin-bottom: 20px; position: relative; z-index: 1; background: linear-gradient(135deg, #11ACCD 0%, #7FC06D 50%, #C5CA31 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
         .hero .subtitle { font-size: 22px; color: #555; max-width: 720px; margin: 0 auto 40px; position: relative; z-index: 1; }
         .hero-btns { display: flex; gap: 16px; justify-content: center; position: relative; z-index: 1; flex-wrap: wrap; }
@@ -44,10 +45,8 @@
         .dir-card p { font-size: 17px; color: #666; }
         .dir-card .dir-arrow { display: inline-block; margin-top: 14px; color: #C5CA31; font-weight: 700; font-size: 16px; }
 
-        .section-gradient { position: relative; background: linear-gradient(135deg, #F8F9FC 0%, #F0F4E8 100%); overflow: hidden; }
-        .section-gradient::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 4px; background: linear-gradient(90deg, #11ACCD, #7FC06D, #C5CA31); z-index: 2; }
-        .section-gradient > * { position: relative; z-index: 1; }
-        .section-gradient::after { content: ''; position: absolute; inset: 0; opacity: .08; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 800'%3E%3Cpath d='M60 550 L60 400 L120 360 L120 180 L180 140 L180 360 L240 390 L240 550 Z' fill='%2311ACCD'/%3E%3Crect x='280' y='350' width='60' height='200' rx='6' fill='%237FC06D'/%3E%3Crect x='360' y='280' width='40' height='270' rx='6' fill='%23C5CA31'/%3E%3Crect x='430' y='320' width='70' height='230' rx='8' fill='%2311ACCD'/%3E%3Cpath d='M580 550 L580 180 L630 180 L630 360 L680 360 L680 440 L730 440 L730 550 Z' fill='%237FC06D'/%3E%3Ccircle cx='830' cy='360' r='60' fill='%23C5CA31'/%3E%3Crect x='920' y='400' width='50' height='150' rx='6' fill='%2311ACCD'/%3E%3Crect x='1000' y='320' width='30' height='230' rx='4' fill='%237FC06D'/%3E%3Crect x='1060' y='240' width='60' height='310' rx='6' fill='%23C5CA31'/%3E%3Cpath d='M0 600 L1200 600' stroke='%2311ACCD' stroke-width='4' fill='none' opacity='.4'/%3E%3Crect x='140' y='560' width='160' height='14' rx='4' fill='%237FC06D' opacity='.5'/%3E%3Crect x='600' y='560' width='200' height='14' rx='4' fill='%23C5CA31' opacity='.5'/%3E%3Crect x='900' y='560' width='100' height='14' rx='4' fill='%2311ACCD' opacity='.5'/%3E%3C/svg%3E"); background-size: cover; background-position: center; pointer-events: none; }
+        .section-gradient { position: relative; background: linear-gradient(135deg, #F8F9FC 0%, #F0F4E8 100%); }
+        .section-gradient::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 4px; background: linear-gradient(90deg, #11ACCD, #7FC06D, #C5CA31); }
 
         .cluster-stats { display: grid; grid-template-columns: repeat(5, 1fr); gap: 16px; margin-bottom: 44px; }
         .cluster-stat-item { text-align: center; padding: 28px 16px; background: #fff; border-radius: 12px; border: 1px solid #E8E8E8; }
@@ -170,6 +169,7 @@
 </header>
 
 <section class="hero">
+    <div class="hero-bg"></div>
     <div class="container">
         <h1>Фонд развития<br>промышленности Омской области</h1>
         <p class="subtitle">Содействие развитию промышленного потенциала, поддержка кластерных инициатив и импортозамещающих проектов</p>
