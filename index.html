@@ -24,7 +24,6 @@
         .hero { padding: 140px 0 80px; background: linear-gradient(135deg, #F8F9FC 0%, #F0F4E8 50%, #F8F9FC 100%); color: #231F20; text-align: center; position: relative; overflow: hidden; }
         .hero::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 4px; background: linear-gradient(90deg, #11ACCD, #7FC06D, #C5CA31); }
         .hero::after { content: ''; position: absolute; inset: 0; background: radial-gradient(circle at 70% 30%, rgba(197,202,49,0.06) 0%, transparent 50%); pointer-events: none; }
-        .hero .hero-bg { position: absolute; inset: 0; opacity: .08; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 800'%3E%3Cpath d='M60 550 L60 400 L120 360 L120 180 L180 140 L180 360 L240 390 L240 550 Z' fill='%2311ACCD'/%3E%3Crect x='280' y='350' width='60' height='200' rx='6' fill='%237FC06D'/%3E%3Crect x='360' y='280' width='40' height='270' rx='6' fill='%23C5CA31'/%3E%3Crect x='430' y='320' width='70' height='230' rx='8' fill='%2311ACCD'/%3E%3Cpath d='M580 550 L580 180 L630 180 L630 360 L680 360 L680 440 L730 440 L730 550 Z' fill='%237FC06D'/%3E%3Ccircle cx='830' cy='360' r='60' fill='%23C5CA31'/%3E%3Crect x='920' y='400' width='50' height='150' rx='6' fill='%2311ACCD'/%3E%3Crect x='1000' y='320' width='30' height='230' rx='4' fill='%237FC06D'/%3E%3Crect x='1060' y='240' width='60' height='310' rx='6' fill='%23C5CA31'/%3E%3Cpath d='M0 600 L1200 600' stroke='%2311ACCD' stroke-width='4' fill='none' opacity='.4'/%3E%3Crect x='140' y='560' width='160' height='14' rx='4' fill='%237FC06D' opacity='.5'/%3E%3Crect x='600' y='560' width='200' height='14' rx='4' fill='%23C5CA31' opacity='.5'/%3E%3Crect x='900' y='560' width='100' height='14' rx='4' fill='%2311ACCD' opacity='.5'/%3E%3C/svg%3E"); background-size: cover; background-position: center; pointer-events: none; }
         .hero h1 { font-size: 58px; font-weight: 800; margin-bottom: 20px; position: relative; z-index: 1; background: linear-gradient(135deg, #11ACCD 0%, #7FC06D 50%, #C5CA31 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
         .hero .subtitle { font-size: 22px; color: #555; max-width: 720px; margin: 0 auto 40px; position: relative; z-index: 1; }
         .hero-btns { display: flex; gap: 16px; justify-content: center; position: relative; z-index: 1; flex-wrap: wrap; }
@@ -36,9 +35,7 @@
         section { padding: 80px 0; }
         .section-title { font-size: 34px; font-weight: 800; margin-bottom: 44px; text-align: center; background: linear-gradient(135deg, #11ACCD 0%, #7FC06D 50%, #C5CA31 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
 
-        .about { background: #fff; position: relative; overflow: hidden; }
-        .about::after { content: ''; position: absolute; inset: 0; opacity: .06; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 800'%3E%3Cpath d='M60 550 L60 400 L120 360 L120 180 L180 140 L180 360 L240 390 L240 550 Z' fill='%2311ACCD'/%3E%3Crect x='280' y='350' width='60' height='200' rx='6' fill='%237FC06D'/%3E%3Crect x='360' y='280' width='40' height='270' rx='6' fill='%23C5CA31'/%3E%3Crect x='430' y='320' width='70' height='230' rx='8' fill='%2311ACCD'/%3E%3Cpath d='M580 550 L580 180 L630 180 L630 360 L680 360 L680 440 L730 440 L730 550 Z' fill='%237FC06D'/%3E%3Ccircle cx='830' cy='360' r='60' fill='%23C5CA31'/%3E%3Crect x='920' y='400' width='50' height='150' rx='6' fill='%2311ACCD'/%3E%3Crect x='1000' y='320' width='30' height='230' rx='4' fill='%237FC06D'/%3E%3Cpath d='M0 600 L1200 600' stroke='%2311ACCD' stroke-width='4' fill='none' opacity='.4'/%3E%3C/svg%3E"); background-size: cover; background-position: center; pointer-events: none; }
-        .about > * { position: relative; z-index: 1; }
+        .about { background: #fff; }
         .about-text { max-width: 860px; margin: 0 auto; text-align: center; color: #555; font-size: 19px; margin-bottom: 36px; }
         .directions { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; max-width: 800px; margin: 0 auto; }
         .dir-card { padding: 36px; background: #F8F9FC; border-radius: 12px; text-decoration: none; color: inherit; transition: transform .2s, box-shadow .2s; cursor: pointer; }
@@ -73,9 +70,9 @@
 
         .doc-templates { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; margin: 24px 0 32px; max-width: 600px; margin-left: auto; margin-right: auto; }
         .doc-tpl { padding: 20px; background: #F8F9FC; border: 1px dashed #C5CA31; border-radius: 8px; text-align: center; }
-        .doc-tpl a { color: #11ACCD; text-decoration: none; font-weight: 600; font-size: 14px; }
-        .doc-tpl .tpl-icon { font-size: 28px; margin-bottom: 8px; }
-        .doc-tpl p { font-size: 12px; color: #888; margin-top: 4px; }
+        .doc-tpl a { color: #11ACCD; text-decoration: none; font-weight: 600; font-size: 16px; }
+        .doc-tpl .tpl-icon { font-size: 30px; margin-bottom: 10px; }
+        .doc-tpl p { font-size: 14px; color: #888; margin-top: 6px; }
 
         .loan-advantages { max-width: 720px; margin: 0 auto 36px; text-align: center; color: #555; font-size: 18px; }
         .loan-programs { display: flex; flex-wrap: wrap; justify-content: center; gap: 24px; margin-bottom: 36px; }
@@ -84,21 +81,18 @@
         .loan-card .loan-rate { font-size: 32px; font-weight: 800; color: #C5CA31; margin-bottom: 8px; text-align: center; }
         .loan-card .loan-detail { font-size: 17px; font-weight: 700; color: #231F20; margin-bottom: 14px; text-align: center; }
         .loan-card .loan-desc { font-size: 15px; color: #555; text-align: center; line-height: 1.5; }
-        .loan-card .loan-desc .label { font-weight: 700; color: #11ACCD; }
 
         .btn-wrap { text-align: center; margin-top: 32px; }
 
         .fund-docs { background: #fff; }
         .fund-docs-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 16px; }
         .fund-doc-item { flex: 0 1 240px; padding: 24px 20px; border: 1px solid #E8E8E8; border-radius: 8px; text-align: center; background: #fff; display: flex; flex-direction: column; }
-        .fund-doc-item a { color: #11ACCD; text-decoration: none; font-size: 16px; font-weight: 600; display: block; margin-bottom: 6px; flex: 1; }
+        .fund-doc-item a { color: #11ACCD; text-decoration: none; font-size: 17px; font-weight: 600; display: block; margin-bottom: 6px; flex: 1; }
         .fund-doc-item a:hover { color: #C5CA31; }
-        .fund-doc-item .hero-btn { margin-top: 12px; padding: 8px 24px; font-size: 13px; color: #fff; }
+        .fund-doc-item .hero-btn { margin-top: 12px; padding: 10px 28px; font-size: 14px; color: #fff; }
 
-        .form-section { background: #fff; position: relative; overflow: hidden; }
-        .form-section::after { content: ''; position: absolute; inset: 0; opacity: .06; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 800'%3E%3Cpath d='M60 550 L60 400 L120 360 L120 180 L180 140 L180 360 L240 390 L240 550 Z' fill='%2311ACCD'/%3E%3Crect x='280' y='350' width='60' height='200' rx='6' fill='%237FC06D'/%3E%3Crect x='360' y='280' width='40' height='270' rx='6' fill='%23C5CA31'/%3E%3Crect x='430' y='320' width='70' height='230' rx='8' fill='%2311ACCD'/%3E%3Cpath d='M580 550 L580 180 L630 180 L630 360 L680 360 L680 440 L730 440 L730 550 Z' fill='%237FC06D'/%3E%3Ccircle cx='830' cy='360' r='60' fill='%23C5CA31'/%3E%3Crect x='920' y='400' width='50' height='150' rx='6' fill='%2311ACCD'/%3E%3Crect x='1000' y='320' width='30' height='230' rx='4' fill='%237FC06D'/%3E%3Cpath d='M0 600 L1200 600' stroke='%2311ACCD' stroke-width='4' fill='none' opacity='.4'/%3E%3C/svg%3E"); background-size: cover; background-position: center; pointer-events: none; }
-        .form-section::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 4px; background: linear-gradient(90deg, #11ACCD, #7FC06D, #C5CA31); z-index: 2; }
-        .form-section > * { position: relative; z-index: 1; }
+        .form-section { background: #fff; position: relative; }
+        .form-section::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 4px; background: linear-gradient(90deg, #11ACCD, #7FC06D, #C5CA31); }
         .form-wrap { max-width: 560px; margin: 0 auto; }
         .form-wrap form { display: flex; flex-direction: column; gap: 16px; }
         .form-wrap input, .form-wrap textarea { padding: 16px 18px; border: 1px solid #E8E8E8; border-radius: 8px; font-size: 16px; font-family: inherit; background: #F8F9FC; color: #231F20; outline: none; transition: border-color .2s; }
@@ -109,9 +103,7 @@
         .form-wrap button { padding: 16px 36px; background: #C5CA31; color: #fff; border: none; border-radius: 8px; font-weight: 700; font-size: 16px; cursor: pointer; transition: opacity .2s; }
         .form-wrap button:hover { opacity: 0.85; }
 
-        .contact { background: #F8F9FC; position: relative; overflow: hidden; }
-        .contact::after { content: ''; position: absolute; inset: 0; opacity: .06; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 800'%3E%3Cpath d='M60 550 L60 400 L120 360 L120 180 L180 140 L180 360 L240 390 L240 550 Z' fill='%2311ACCD'/%3E%3Crect x='280' y='350' width='60' height='200' rx='6' fill='%237FC06D'/%3E%3Crect x='360' y='280' width='40' height='270' rx='6' fill='%23C5CA31'/%3E%3Crect x='430' y='320' width='70' height='230' rx='8' fill='%2311ACCD'/%3E%3Cpath d='M580 550 L580 180 L630 180 L630 360 L680 360 L680 440 L730 440 L730 550 Z' fill='%237FC06D'/%3E%3Ccircle cx='830' cy='360' r='60' fill='%23C5CA31'/%3E%3Crect x='920' y='400' width='50' height='150' rx='6' fill='%2311ACCD'/%3E%3Crect x='1000' y='320' width='30' height='230' rx='4' fill='%237FC06D'/%3E%3Cpath d='M0 600 L1200 600' stroke='%2311ACCD' stroke-width='4' fill='none' opacity='.4'/%3E%3C/svg%3E"); background-size: cover; background-position: center; pointer-events: none; }
-        .contact > * { position: relative; z-index: 1; }
+        .contact { background: #F8F9FC; }
         .contact-info-wrap { display: flex; justify-content: center; gap: 48px; flex-wrap: wrap; }
         .contact-item { text-align: center; }
         .contact-item .label { font-size: 14px; color: #888; margin-bottom: 4px; }
@@ -178,7 +170,6 @@
 </header>
 
 <section class="hero">
-    <div class="hero-bg"></div>
     <div class="container">
         <h1>Фонд развития<br>промышленности Омской области</h1>
         <p class="subtitle">Содействие развитию промышленного потенциала, поддержка кластерных инициатив и импортозамещающих проектов</p>
@@ -304,15 +295,15 @@
         <div class="doc-templates">
             <div class="doc-tpl">
                 <div class="tpl-icon">📋</div>
-                <a href="anketa.docx" download target="_blank" style="color:#11ACCD;font-weight:600;font-size:14px;text-decoration:none;">Анкета потенциального участника</a>
+                <a href="anketa.docx" download target="_blank" style="color:#11ACCD;font-weight:600;font-size:16px;text-decoration:none;">Анкета потенциального участника</a>
                 <p>Описание деятельности и кооперационных связей.</p>
-                <a href="anketa.docx" download target="_blank" class="hero-btn" style="margin-top:12px;padding:8px 24px;font-size:13px;color:#fff;">Скачать</a>
+                <a href="anketa.docx" download target="_blank" class="hero-btn" style="margin-top:12px;padding:10px 28px;font-size:14px;color:#fff;">Скачать</a>
             </div>
             <div class="doc-tpl">
                 <div class="tpl-icon">🤝</div>
-                <a href="soglashenie.docx" download target="_blank" style="color:#11ACCD;font-weight:600;font-size:14px;text-decoration:none;">Соглашение о вступлении в промышленный кластер</a>
+                <a href="soglashenie.docx" download target="_blank" style="color:#11ACCD;font-weight:600;font-size:16px;text-decoration:none;">Соглашение о вступлении в промышленный кластер</a>
                 <p>Соглашение о совместной деятельности</p>
-                <a href="soglashenie.docx" download target="_blank" class="hero-btn" style="margin-top:12px;padding:8px 24px;font-size:13px;color:#fff;">Скачать</a>
+                <a href="soglashenie.docx" download target="_blank" class="hero-btn" style="margin-top:12px;padding:10px 28px;font-size:14px;color:#fff;">Скачать</a>
             </div>
         </div>
 
@@ -334,37 +325,37 @@
                 <h4>Приоритетная продукция</h4>
                 <div class="loan-rate">5%</div>
                 <div class="loan-detail">от 10 до 100 млн ₽ · до 5 лет</div>
-                <div class="loan-desc"><span class="label">Уровень поддержки:</span> региональный<br><span class="label">Собственное софинансирование:</span> 20%</div>
+                <div class="loan-desc">Уровень поддержки: региональный<br>Собственное софинансирование: 20%</div>
             </div>
             <div class="loan-card">
                 <h4>Производительность труда</h4>
                 <div class="loan-rate">3–5%</div>
                 <div class="loan-detail">от 10 до 300 млн ₽ · до 5 лет</div>
-                <div class="loan-desc"><span class="label">Уровень поддержки:</span> региональный, федеральный, совместный<br><span class="label">Собственное софинансирование:</span> 20%</div>
+                <div class="loan-desc">Уровень поддержки: региональный, федеральный, совместный<br>Собственное софинансирование: 20%</div>
             </div>
             <div class="loan-card">
                 <h4>Проекты развития</h4>
                 <div class="loan-rate">3–5%</div>
                 <div class="loan-detail">от 10 млн до 1 млрд ₽ · до 5 лет</div>
-                <div class="loan-desc"><span class="label">Уровень поддержки:</span> региональный, федеральный, совместный<br><span class="label">Собственное софинансирование:</span> 20%</div>
+                <div class="loan-desc">Уровень поддержки: региональный, федеральный, совместный<br>Собственное софинансирование: 20%</div>
             </div>
             <div class="loan-card">
                 <h4>Пищевая промышленность</h4>
                 <div class="loan-rate">5%</div>
                 <div class="loan-detail">от 5 до 50 млн ₽ · до 5 лет</div>
-                <div class="loan-desc"><span class="label">Уровень поддержки:</span> региональный<br><span class="label">Собственное софинансирование:</span> 20%</div>
+                <div class="loan-desc">Уровень поддержки: региональный<br>Собственное софинансирование: 20%</div>
             </div>
             <div class="loan-card">
                 <h4>Поддержка участников промышленного кластера</h4>
                 <div class="loan-rate">1%</div>
                 <div class="loan-detail">от 5 до 20 млн ₽ · до 3 лет</div>
-                <div class="loan-desc"><span class="label">Уровень поддержки:</span> региональный<br><span class="label">Собственное софинансирование:</span> 20%</div>
+                <div class="loan-desc">Уровень поддержки: региональный<br>Собственное софинансирование: 20%</div>
             </div>
             <div class="loan-card">
                 <h4>Ответственный инвестор</h4>
                 <div class="loan-rate">1%</div>
                 <div class="loan-detail">от 5 до 30 млн ₽ · до 5 лет</div>
-                <div class="loan-desc"><span class="label">Уровень поддержки:</span> региональный<br><span class="label">Собственное софинансирование:</span> 20%</div>
+                <div class="loan-desc">Уровень поддержки: региональный<br>Собственное софинансирование: 20%</div>
             </div>
         </div>
 
